@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-from django.db import models
-
-# Create your models here.
-=======
 from django.contrib.auth.models import AbstractUser
 from django.core.validators import MinValueValidator, MaxValueValidator
 from django.db import models
@@ -108,4 +103,3 @@ class Review(models.Model):
 
     def __str__(self):
         return str(self.property)
->>>>>>> rakanbek

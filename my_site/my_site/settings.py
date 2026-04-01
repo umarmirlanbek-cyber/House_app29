@@ -1,13 +1,9 @@
-<<<<<<< HEAD
-from pathlib import Path
-from dotenv import load_dotenv
-import os
-=======
 from datetime import timedelta
 from pathlib import Path
 import os
+
+import timedelta
 from dotenv import load_dotenv
->>>>>>> rakanbek
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -18,11 +14,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 load_dotenv()
-<<<<<<< HEAD
-SECRET_KEY = os.getenv("SECRET_KEY")
-=======
 SECRET_KEY = os.getenv('SECRET_KEY')
->>>>>>> rakanbek
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -33,10 +26,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
-<<<<<<< HEAD
-=======
     'modeltranslation',
->>>>>>> rakanbek
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -45,9 +35,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'apart_app',
-<<<<<<< HEAD
     'phonenumber_field',
-=======
     "phonenumber_field",
     'django_filters',
     'rest_framework_swagger',
@@ -60,25 +48,18 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',
     'rest_framework_simplejwt.token_blacklist',
     'corsheaders',
->>>>>>> rakanbek
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-<<<<<<< HEAD
-=======
     'django.middleware.locale.LocaleMiddleware',
->>>>>>> rakanbek
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-<<<<<<< HEAD
-=======
     "allauth.account.middleware.AccountMiddleware",
->>>>>>> rakanbek
 ]
 
 ROOT_URLCONF = 'my_site.urls'
@@ -106,18 +87,11 @@ WSGI_APPLICATION = 'my_site.wsgi.application'
 
 DATABASES = {
     'default': {
-<<<<<<< HEAD
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
-
-=======
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'apart_appteam',
+        'NAME': 'booking_app29',
         'USER': 'postgres',
         'PASSWORD': 'topor231',
-        'HOST': 'localhost',
+        'HOST': 'db',
         'PORT': '5432',
     }
 }
@@ -129,7 +103,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
->>>>>>> rakanbek
 
 # Password validation
 # https://docs.djangoproject.com/en/6.0/ref/settings/#auth-password-validators
@@ -148,19 +121,17 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
-<<<<<<< HEAD
 
-=======
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': ('rest_framework_simplejwt.authentication.JWTAuthentication'
                                            ,'rest_framework_simplejwt.authentication.JWTAuthentication')
 }
->>>>>>> rakanbek
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/6.0/topics/i18n/
 
-<<<<<<< HEAD
+
 LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'UTC'
@@ -174,7 +145,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
 STATIC_URL = 'static/'
-=======
+
 LANGUAGE_CODE = 'en'
 
 LANGUAGES = (
@@ -217,4 +188,3 @@ AUTHENTICATION_BACKENDS = [
 
     'allauth.account.auth_backends.AuthenticationBackend',
 ]
->>>>>>> rakanbek

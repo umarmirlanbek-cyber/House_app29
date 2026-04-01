@@ -1,8 +1,3 @@
-from django.shortcuts import render
-<<<<<<< HEAD
-
-# Create your views here.
-=======
 from rest_framework import viewsets, generics
 from rest_framework.filters import OrderingFilter, SearchFilter
 from rest_framework.views import APIView
@@ -145,4 +140,3 @@ class PropertyDetailAPIView(generics.RetrieveAPIView):
     queryset = Property.objects.all()
     serializer_class = PropertyDetailSerializer
     permission_classes = [SellerPermission]
->>>>>>> rakanbek

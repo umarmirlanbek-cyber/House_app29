@@ -1,8 +1,4 @@
 from django.contrib import admin
-<<<<<<< HEAD
-
-# Register your models here.
-=======
 from .models import (
     UserProfile, Country, City, Region,
     District, Condition, PropertyImage, Property, Review
@@ -42,4 +38,4 @@ admin.site.register(Region)
 admin.site.register(District)
 admin.site.register(Condition)
 admin.site.register(Review)
->>>>>>> rakanbek
+
