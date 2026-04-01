@@ -88,7 +88,7 @@ WSGI_APPLICATION = 'my_site.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'booking_app29',
+        'NAME': 'apart_appteam',
         'USER': 'postgres',
         'PASSWORD': 'topor231',
         'HOST': 'db',
